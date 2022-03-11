@@ -1,5 +1,6 @@
 #include "Agent2.h"
 #include "SpriteComponent.h"
+#include "Agent2SeekComponent.h"
 #include "GameManager.h"
 #include "Goal.h"
 
@@ -17,6 +18,8 @@ void Agent2::start()
 {
 	Character::start();
 	//add steering behaviours here
+	m_agent2SeekComponet = addComponent<Agent2SeekComponent>();
+
 }
 
 void Agent2::update(float deltaTime)

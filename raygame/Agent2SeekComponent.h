@@ -1,10 +1,10 @@
 #pragma once
-#include "Component.h"
+#include "SteeringComponent.h"
 #include <Vector2.h>
 class Agent2SeekComponent :
-	public Component
+	public SteeringComponent
 {
 public:
-	void calculateForce();
+	MathLibrary::Vector2 calculateForce() override;
 };
 

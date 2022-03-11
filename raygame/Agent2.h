@@ -1,5 +1,6 @@
 #pragma once
 #include "Character.h"
+#include "Agent2SeekComponent.h"
 
 class Agent2 :
     public Character
@@ -19,6 +20,9 @@ public:
     virtual void update(float deltaTime) override;
     virtual void onDeath();
     virtual void onDamageRecieved() {};
+
+private:
+    Agent2SeekComponent* m_agent2SeekComponet;
 };
 
 
