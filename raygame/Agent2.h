@@ -1,6 +1,8 @@
 #pragma once
 #include "Character.h"
 #include "Agent2SeekComponent.h"
+#include "Actor.h"
+#include "GameManager.h"
 
 class Agent2 :
     public Character
@@ -12,7 +14,7 @@ public:
     /// <param name="maxForce">The maximum amount of force that can be applied to this character</param>
     /// <param name="maxSpeed">How fast this actor can go</param>
     /// <param name="health">The amount of health this character has</param>
-    Agent2(float x, float y, const char* name, float maxForce, float maxSpeed, float health);
+    Agent2(float x, float y, const char* name, float maxForce, float maxSpeed, float health, Actor* ball);
 
     // Inherited from the Character class
     virtual void onCollision(Actor* actor) override;
@@ -22,7 +24,10 @@ public:
     virtual void onDamageRecieved() {};
 
 private:
+    Actor* m_ball;
+    Actor* m_goal;
     Agent2SeekComponent* m_agent2SeekComponet;
+    Actor* m_actor;
 };
 
 
