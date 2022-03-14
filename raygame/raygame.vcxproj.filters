@@ -92,6 +92,12 @@
     <ClCompile Include="SeekMLComponent.cpp">
       <Filter>Components</Filter>
     </ClCompile>
+    <ClCompile Include="BulletML.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShieldML.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -171,6 +177,12 @@
     </ClInclude>
     <ClInclude Include="SeekMLComponent.h">
       <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletML.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShieldML.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
