@@ -21,5 +21,6 @@ public:
 private:
     Actor* m_target;
     SeekMLComponent* m_seekComponent;
+    int m_timer;
 };
 

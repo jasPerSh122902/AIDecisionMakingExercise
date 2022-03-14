@@ -39,6 +39,13 @@ void ShieldML::start()
 void ShieldML::update(float deltaTime)
 {
 	Character::update(deltaTime);
+
+	m_timer++;
+
+	if (m_timer == 45000) 
+	{
+		//onDeath();
+	}
 }
 
 void ShieldML::onDeath()

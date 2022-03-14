@@ -44,6 +44,8 @@ void Agent1::update(float deltaTime)
 	Character::update(deltaTime);
 	if (getHasBall())
 		m_seekComponent->setTarget(m_goal);
+	else
+		m_seekComponent->setTarget(m_goal);
 	if (m_timer >= 10000) 
 	{
 		m_timer = 0;
