@@ -11,6 +11,7 @@
 #include "GameManager.h"
 #include "ScoreBoard.h"
 #include "Engine.h"
+#include "SeekMLComponent.h"
 #include "Agent2SeekComponent.h"
 
 void MainScene::start()
@@ -19,6 +20,9 @@ void MainScene::start()
 	ball->addComponent(new SpriteComponent("Images/ball.png"));
 	ball->getTransform()->setScale({100, 100 });
 	ball->setCollider(new CircleCollider(1, ball));
+
+	Agent1* agent1 = new Agent1(250, 400, "Agent1", 50, 50, 3, ball);
+	Agent2* agent2 = new Agent2(Engine::getScreenWidth() - 250.0f, 400, "Agent2", 50, 50, 3);
 
 	Agent1* agent1 = new Agent1(250, 400, "Agent1", 50, 50, 3);
 	Agent2* agent2 = new Agent2(Engine::getScreenWidth() - 250.0f, 400, "Agent2", 50, 50, 3, ball);
