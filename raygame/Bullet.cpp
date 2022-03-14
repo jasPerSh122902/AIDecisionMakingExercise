@@ -29,5 +29,8 @@ void Bullet::start()
 
 void Bullet::update(float deltaTime)
 {
+	if (time > 7)
+		delete this;
 	Character::update(deltaTime);
+	
 }

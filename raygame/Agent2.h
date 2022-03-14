@@ -26,6 +26,7 @@ public:
 
 private:
     Bullet* m_bullet;
+    float time_b = 0;
     Actor* m_goal;
     Agent2SeekComponent* m_agent2SeekComponet;
     GameManager* m_gameManager = GameManager::getInstance();

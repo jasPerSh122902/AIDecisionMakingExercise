@@ -25,6 +25,7 @@ void Agent2::onCollision(Actor* actor)
 void Agent2::start()
 {
 	Character::start();
+	
 	//add steering behaviours here
 	m_stateMachineComponent = addComponent<Agent2StateMachineComponent>();
 
@@ -38,7 +39,19 @@ void Agent2::start()
 
 void Agent2::update(float deltaTime)
 {
-	Bullet* bullet = new Bullet(this->getTransform()->getWorldPosition().x, this->getTransform()->getWorldPosition().y ,"Bullet", 200, 200, 1,this);
+	time_b++;
+	if (time_b > 7000) 
+	{
+		Bullet* bullet = new Bullet(this->getTransform()->getWorldPosition().x, this->getTransform()->getWorldPosition().y, "Bullet", 200, 200, 1, this);
+		Engine::getCurrentScene()->addActor(bullet);
+
+		Bullet* bullet2 = new Bullet(this->getTransform()->getWorldPosition().x + 55, this->getTransform()->getWorldPosition().y + 55 , "Bullet", 200, 200, 1, this);
+		Engine::getCurrentScene()->addActor(bullet2);
+
+		Bullet* bullet3 = new Bullet(this->getTransform()->getWorldPosition().x - 55, this->getTransform()->getWorldPosition().y - 55, "Bullet", 200, 200, 1, this);
+		Engine::getCurrentScene()->addActor(bullet3);
+		time_b = 0;
+	}
 	Character::update(deltaTime);
 }
 

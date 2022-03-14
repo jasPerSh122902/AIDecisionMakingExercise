@@ -15,5 +15,6 @@ public:
 private:
     Scene* m_scene;
     MoveComponent* m_moveComponet;
+    float time = 0;
 };
 

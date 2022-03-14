@@ -27,7 +27,7 @@ void Agent1::start()
 	m_goal = manager->getRightGoal();
 
 	m_seekComponent = new SeekMLComponent();
-	m_seekComponent->setSteeringForce(10);
+	m_seekComponent->setSteeringForce(100);
 	m_seekComponent->setTarget(m_ball);
 	addComponent(m_seekComponent);
 }
