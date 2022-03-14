@@ -19,6 +19,7 @@ void Agent1::start()
 {
 	Character::start();
 
+	//Get the manager to get the goal to target
 	GameManager* manager = GameManager::getInstance();
 	m_goal = manager->getRightGoal();
 
