@@ -12,6 +12,10 @@ Agent1::Agent1(float x, float y, const char* name, float maxForce, float maxSpee
 
 void Agent1::onCollision(Actor* actor)
 {
+	if (actor->getName() == "Agent2" || actor->getName() == "Bullet")
+	{
+		takeDamage();
+	}
 	Character::onCollision(actor);
 }
 
@@ -23,7 +27,7 @@ void Agent1::start()
 	m_goal = manager->getRightGoal();
 
 	m_seekComponent = new SeekMLComponent();
-	m_seekComponent->setSteeringForce(100);
+	m_seekComponent->setSteeringForce(10);
 	m_seekComponent->setTarget(m_ball);
 	addComponent(m_seekComponent);
 }
