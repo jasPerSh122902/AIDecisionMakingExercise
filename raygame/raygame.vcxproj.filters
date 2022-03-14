@@ -89,6 +89,9 @@
     <ClCompile Include="Agent2StateMachineComponent.cpp">
       <Filter>Components</Filter>
     </ClCompile>
+    <ClCompile Include="SeekMLComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -164,6 +167,9 @@
       <Filter>Components</Filter>
     </ClInclude>
     <ClInclude Include="Agent2StateMachineComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="SeekMLComponent.h">
       <Filter>Components</Filter>
     </ClInclude>
   </ItemGroup>
