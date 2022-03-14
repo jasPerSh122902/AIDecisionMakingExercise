@@ -83,6 +83,12 @@
     <ClCompile Include="ScoreBoard.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Agent2SeekComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent2StateMachineComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
     <ClCompile Include="SeekMLComponent.cpp">
       <Filter>Components</Filter>
     </ClCompile>
@@ -156,6 +162,12 @@
     </ClInclude>
     <ClInclude Include="ScoreBoard.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent2SeekComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent2StateMachineComponent.h">
+      <Filter>Components</Filter>
     </ClInclude>
     <ClInclude Include="SeekMLComponent.h">
       <Filter>Components</Filter>
